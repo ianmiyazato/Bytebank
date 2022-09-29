@@ -8,8 +8,20 @@
 
   <style>
 
+    html body {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
     img {
       display: block;
+    }
+
+    .chamada-texto {
+      padding: 0 20px;
+      font-size: 15px;
+      font-family: sans-serif;
     }
 
     .sem-underline {
@@ -37,6 +49,23 @@
 
     .vantagem {
       max-width: 133px;
+    }
+
+    .vantagem__espacamento {
+    }
+
+    @media (max-width: 520px) {
+      .vantagem {
+        display: block;
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .vantagem__espacamento {
+        display: block;
+        height: 0px;
+      }
     }
 
     .vantagem hr {
@@ -78,7 +107,7 @@
 
 
 
-  <table border="1" width="90%" cellspacing="0" cellpadding="0">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
     <tr bgcolor="#000000">
       <td align="center" class="cabecalho-logo"> <br>
         <img src="images/Top_Logo.png" alt="ByteBank - digital de verdade"> <br>
@@ -101,7 +130,7 @@
 
     <tr>
       <td align="center">
-        <span style="font-size: 15px; font-family: sans-serif;">
+        <span class="chamada-texto">
           João Vicente convidou você para o banco mais digital que existe na atualidade!
           <br><br>
         </span>
@@ -159,7 +188,7 @@
       </td>
     </tr>
 
-    <!-- Começo das vantagens verde -->
+    <!-- Parte verde -->
     <tr bgcolor="#46A237">
       <td align="center">
         <table>
@@ -182,7 +211,7 @@
                 </tr>
               </table>
             </td>
-            <td width="135">
+            <td width="135" class="vantagem__espacamento">
               &nbsp;
             </td>
             <td width="200" class="vantagem">
@@ -208,7 +237,7 @@
       </td>
     </tr>
 
-    <!-- Começo do rodapé preto -->
+    <!-- Parte preto -->
     <tr bgcolor="black">
       <td>
         <table align="center">
@@ -236,6 +265,7 @@
     <tr bgcolor="black" align="center">
       <td class="rodape-texto">
         Dúvidas? Fique à vontade para responder esse email ou nos contatar no <a href="mailto:f1@bytebank.com.br" class="rodape-link">f1@bytebank.com.br</a>
+        <br><br>
       </td>
     </tr>
 
